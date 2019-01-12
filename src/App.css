@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    background-image: url('./images/stressed_linen.png');
+}
+
+img{
+   display: block;
+}
+
+a,a:link,a:visited,a:hover,a:focus,a:active{
+  color: white;
+  text-decoration: none;
+}
+
+.title{
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  max-width:960px;
+  margin: 10px auto;
+  padding: 8px 0;
+  border-bottom: 2px solid white;
+  font-style: italic;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  padding: 8px;
+}
+
+.footer p{
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 3px;
+}
+
+.credit-link{
+  display: inline-block;
+  
+}
+.dblogo{
+  width: 25px;
+  
+}

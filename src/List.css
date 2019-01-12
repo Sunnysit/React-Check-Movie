@@ -1,0 +1,47 @@
+.select-container{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.selectbar{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.btn-group{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.page-btn{
+    margin: 0 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .8s all ease;
+
+}
+
+.page-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.select-container{
+    text-align: center;
+    margin: 10px 0;
+}

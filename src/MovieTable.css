@@ -1,0 +1,170 @@
+ /* List Styles */
+ .movie-list-container{
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 10px;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.movie-item{
+    grid-column: span 3;
+    margin-top: 8px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+
+}
+
+.movie-img-container{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 1.2s ease;
+    border: 3px solid transparent;
+}
+
+.movie-img-container:hover{
+    border: 3px solid white;
+}
+
+.movie-img-container:hover .movie-poster{
+    transform: scale(1.18);
+}
+
+.movie-poster{
+    width: 100%;
+    transition: all 1.2s ease;
+}
+
+.movie-info{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+.movie-title{
+   
+    color: white;
+    text-align: center;
+    margin: 5px 0;
+    font-weight: 900;
+}
+
+.movie-poster-mobile{
+    display: none;
+}
+
+.movie-overview{
+
+    display: block;
+    height: 100px;
+    overflow-y: auto;
+
+}
+
+.movie-detail-container{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 70vw;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    top: 10%;
+    color: white;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.movie-detail-basic-container{
+    display: flex;
+    justify-content: center;
+}
+.movie-detail-textarea{
+    margin-left: 15px;
+}
+
+.movie-detail-textarea h5,.movie-detail-textarea p{
+    margin: 5px;
+}
+
+.movie-detail-title{
+    text-align: center;
+    padding: 3px 0;
+   
+}
+.movie-detail-poster{
+    margin: 0 ;
+    width: 30%;
+    height: 30%;
+}
+
+.view-more-btn{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+    width: 150px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    transition: all 0.8s ease;
+    margin-bottom: 5px;
+}
+
+.view-more-btn:hover{
+    background-color: white;
+    color: black;
+  
+}
+
+
+.close-btn{
+    position: absolute;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn img{
+    width: 25px;
+}
+
+.hide-window{
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+
+    .movie-item{
+        grid-column: span 12;
+    }
+
+    .movie-img-container:hover{
+        border: 3px solid transparent;
+    }
+
+    .movie-poster-mobile{
+        display: block;
+        width: 100%;
+    }
+
+    .movie-poster{
+        display: none;
+    }
+
+    .movie-detail-container{
+        width: 90vw;
+    }
+
+    .movie-detail-container{
+        top: 15%;
+    }
+}
